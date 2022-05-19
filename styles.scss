@@ -70,6 +70,80 @@ body {
 			}
 		}
 
+		.header-text {
+			// opacity: 0;
+			// transform: translateY(40px);
+			z-index: 4;
+		}
+
+		.animation-wrapper {
+			overflow: hidden;
+		}
+
+		.animate-text {
+			animation: textAnimation 1.5s;
+		}
+
+		.animate-sub-text {
+			animation: subTextAnimation 1.5s;
+		}
+
+		.animated-img {
+			animation: animateItem 0.4s;
+		}
+
+		.animated-btn {
+			animation: animateItem 1s;
+		}
+
+		.animated-img-2 {
+			animation: animateItem 0.3s;
+		}
+
+		@keyframes textAnimation {
+			0% {
+				transform: translateY(100%);
+				opacity: 0;
+			}
+			45% {
+				transform: translateY(50%);
+				opacity: 0;
+			}
+
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes subTextAnimation {
+			0% {
+				transform: translateY(100%);
+				opacity: 0;
+			}
+			75% {
+				transform: translateY(50%);
+				opacity: 0;
+			}
+
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes animateItem {
+			0% {
+				transform: translateY(30px);
+				opacity: 0;
+			}
+
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
 		.header-wrapper {
 			.top-stars {
 				position: absolute;
@@ -90,12 +164,12 @@ body {
 		}
 
 		.sub-heading {
-			padding-top: 20px;
+			padding-top: 8px;
 			font-family: Inter;
 			font-size: 29px;
 			font-weight: 700;
 			line-height: 33px;
-			letter-spacing: -0.06em;
+			letter-spacing: -0.03em;
 			text-align: center;
 
 			p {
@@ -103,19 +177,36 @@ body {
 				align-items: center;
 				align-items: flex-start;
 				margin-left: 600px;
+				padding-top: 5px;
+				font-family: Inter;
+				font-size: 29px;
+				font-weight: 700;
+				line-height: 33px;
+				letter-spacing: -0.03em;
+				text-align: center;
+			}
+			.second {
+				margin-left: 500px;
+				//margin-right: 60px;
 			}
 		}
 
-		.second {
-			margin-left: 50px;
+		.sub-wrapper {
+			margin-left: 530px;
+			//margin-top: 0.07rem;
+			padding-top: 0.5rem;
 		}
-
+		.btn {
+			margin-left: 640px;
+			padding-top: 4px;
+		}
 		.coin-pot-wrapper {
 			width: fit-content;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
+			padding-top: 0.5rem;
 		}
 	}
 }
