@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .bg-body {
@@ -16,6 +20,106 @@ body .bg-body {
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body .bg-body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 44px 104px 53.5px 104px;
+}
+
+body .bg-body nav .logo {
+  height: 40px;
+  width: 40.24px;
+  overflow: hidden;
+}
+
+body .bg-body nav .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .bg-body nav .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .bg-body nav .days .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 109%;
+  color: #ffffff;
+}
+
+body .bg-body nav .days .text p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 109%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 4px;
+}
+
+body .bg-body .header-wrapper .top-stars {
+  position: absolute;
+}
+
+body .bg-body .header-wrapper p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 91%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+body .bg-body .header-wrapper p.bold {
+  font-weight: 700;
+}
+
+body .bg-body .sub-heading {
+  padding-top: 20px;
+  font-family: Inter;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+
+body .bg-body .sub-heading p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 600px;
+}
+
+body .bg-body .second {
+  margin-left: 50px;
 }
 
 body .bg-body .coin-pot-wrapper {

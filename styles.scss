@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "./utilities";
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
+
 body {
 	.bg-body {
 		background-image: url("./assets/background.png");
@@ -10,7 +15,7 @@ body {
 		// display: flex;
 		// justify-content: center;
 		// align-items: center;
-		color: #ffffff;
+		color: $bgcolor;
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 100%;
@@ -19,6 +24,91 @@ body {
 		left: 0;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 44px 104px 53.5px 104px;
+
+			.logo {
+				height: 40px;
+				width: 40.24px;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.days {
+				display: flex;
+				gap: 10px;
+				align-items: center;
+
+				.text {
+					p {
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 700;
+						font-size: 18px;
+						line-height: 109%;
+						color: $logocolor;
+
+						&:nth-of-type(2) {
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 109%;
+							letter-spacing: -0.02em;
+							color: $text;
+							margin-top: 4px;
+						}
+					}
+				}
+			}
+		}
+
+		.header-wrapper {
+			.top-stars {
+				position: absolute;
+			}
+			p {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 300;
+				font-size: 70px;
+				line-height: 91%;
+				text-align: center;
+				letter-spacing: -0.015em;
+				color: $headerwrapper;
+				&.bold {
+					font-weight: 700;
+				}
+			}
+		}
+
+		.sub-heading {
+			padding-top: 20px;
+			font-family: Inter;
+			font-size: 29px;
+			font-weight: 700;
+			line-height: 33px;
+			letter-spacing: -0.06em;
+			text-align: center;
+
+			p {
+				display: flex;
+				align-items: center;
+				align-items: flex-start;
+				margin-left: 600px;
+			}
+		}
+
+		.second {
+			margin-left: 50px;
+		}
 
 		.coin-pot-wrapper {
 			width: fit-content;
