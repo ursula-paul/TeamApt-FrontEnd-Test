@@ -151,8 +151,8 @@ body {
 			p {
 				font-family: "Poppins";
 				font-style: normal;
-				font-weight: 300;
-				font-size: 70px;
+				font-weight: 200;
+				font-size: 50px;
 				line-height: 91%;
 				text-align: center;
 				letter-spacing: -0.015em;
@@ -166,27 +166,28 @@ body {
 		.sub-heading {
 			padding-top: 8px;
 			font-family: Inter;
-			font-size: 29px;
-			font-weight: 700;
+			//font-size: 20px;
+			//font-weight: 400;
 			line-height: 33px;
 			letter-spacing: -0.03em;
 			text-align: center;
+			//display: flex;
 
 			p {
 				display: flex;
 				align-items: center;
 				align-items: flex-start;
-				margin-left: 600px;
+				margin-left: 630px;
 				padding-top: 5px;
 				font-family: Inter;
-				font-size: 29px;
-				font-weight: 700;
-				line-height: 33px;
-				letter-spacing: -0.03em;
+				font-size: 20px;
+				//font-weight: 500;
+				// line-height: 33px;
+				// letter-spacing: -0.03em;
 				text-align: center;
 			}
 			.second {
-				margin-left: 500px;
+				margin-left: 550px;
 				//margin-right: 60px;
 			}
 		}
@@ -198,7 +199,7 @@ body {
 		}
 		.btn {
 			margin-left: 640px;
-			padding-top: 4px;
+			padding-top: 10px;
 		}
 		.coin-pot-wrapper {
 			width: fit-content;
@@ -207,6 +208,41 @@ body {
 			left: 50%;
 			transform: translateX(-50%);
 			padding-top: 0.5rem;
+
+			.bouncing-coin {
+				position: absolute;
+
+				height: 120px;
+				width: 120px;
+			}
+
+			.coin-left {
+				animation: animateCoin 6s infinite;
+			}
+
+			.coin-right {
+				right: -40px;
+				bottom: 40px;
+				animation: animateCoin 8s infinite;
+			}
+
+			@keyframes animateCoin {
+				0% {
+					transform: translateY(0px);
+				}
+
+				50% {
+					transform: translateY(50px);
+				}
+
+				70% {
+					transform: translateY(-50px);
+				}
+
+				70% {
+					transform: translateY(-1px);
+				}
+			}
 		}
 	}
 }

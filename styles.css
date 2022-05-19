@@ -214,8 +214,8 @@ body .bg-body .header-wrapper .top-stars {
 body .bg-body .header-wrapper p {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
-  font-size: 70px;
+  font-weight: 200;
+  font-size: 50px;
   line-height: 91%;
   text-align: center;
   letter-spacing: -0.015em;
@@ -229,8 +229,6 @@ body .bg-body .header-wrapper p.bold {
 body .bg-body .sub-heading {
   padding-top: 8px;
   font-family: Inter;
-  font-size: 29px;
-  font-weight: 700;
   line-height: 33px;
   letter-spacing: -0.03em;
   text-align: center;
@@ -246,18 +244,15 @@ body .bg-body .sub-heading p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 600px;
+  margin-left: 630px;
   padding-top: 5px;
   font-family: Inter;
-  font-size: 29px;
-  font-weight: 700;
-  line-height: 33px;
-  letter-spacing: -0.03em;
+  font-size: 20px;
   text-align: center;
 }
 
 body .bg-body .sub-heading .second {
-  margin-left: 500px;
+  margin-left: 550px;
 }
 
 body .bg-body .sub-wrapper {
@@ -267,7 +262,7 @@ body .bg-body .sub-wrapper {
 
 body .bg-body .btn {
   margin-left: 640px;
-  padding-top: 4px;
+  padding-top: 10px;
 }
 
 body .bg-body .coin-pot-wrapper {
@@ -280,5 +275,61 @@ body .bg-body .coin-pot-wrapper {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding-top: 0.5rem;
+}
+
+body .bg-body .coin-pot-wrapper .bouncing-coin {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+}
+
+body .bg-body .coin-pot-wrapper .coin-left {
+  -webkit-animation: animateCoin 6s infinite;
+          animation: animateCoin 6s infinite;
+}
+
+body .bg-body .coin-pot-wrapper .coin-right {
+  right: -40px;
+  bottom: 40px;
+  -webkit-animation: animateCoin 8s infinite;
+          animation: animateCoin 8s infinite;
+}
+
+@-webkit-keyframes animateCoin {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  70% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  70% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes animateCoin {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  70% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  70% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
