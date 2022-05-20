@@ -7,19 +7,18 @@
           box-sizing: border-box;
 }
 
-body .bg-body {
+body {
   background-image: url("./assets/background.png");
-  width: auto;
-  height: auto;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body .bg-body {
+  width: 100vw;
+  height: 100%;
+  color: #ffffff;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 body .bg-body nav {
@@ -211,6 +210,10 @@ body .bg-body .header-wrapper .top-stars {
   position: absolute;
 }
 
+body .bg-body .header-wrapper .top-stars img {
+  width: 100%;
+}
+
 body .bg-body .header-wrapper p {
   font-family: "Poppins";
   font-style: normal;
@@ -235,40 +238,34 @@ body .bg-body .sub-heading {
 }
 
 body .bg-body .sub-heading p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-left: 630px;
   padding-top: 5px;
   font-family: Inter;
   font-size: 20px;
   text-align: center;
 }
 
-body .bg-body .sub-heading .second {
-  margin-left: 550px;
-}
-
 body .bg-body .sub-wrapper {
-  margin-left: 530px;
   padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .bg-body .btn {
-  margin-left: 640px;
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 300px;
 }
 
 body .bg-body .coin-pot-wrapper {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -301,12 +298,12 @@ body .bg-body .coin-pot-wrapper .coin-right {
             transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
   }
   70% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
   70% {
     -webkit-transform: translateY(-1px);
@@ -320,16 +317,24 @@ body .bg-body .coin-pot-wrapper .coin-right {
             transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
   }
   70% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
   70% {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .cover {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 /*# sourceMappingURL=styles.css.map */
