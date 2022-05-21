@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: url("./assets/background.png");
+	background-image: url("./public/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -294,9 +294,6 @@ body {
 @media only screen and (min-width: 375px) and (max-width: 1280px) {
 	body,
 	.bg-body {
-		// margin-bottom: 0;
-		// margin-bottom: 100px;
-		//position: relative;
 		margin-right: 100px;
 		color: red;
 	}
